@@ -9,26 +9,31 @@
 <body>
   <div class="container">
       <h1>Bio Creator</h1>
-    <form id="form" class="form">
+      <form id="form" class="form" action="/register" method="POST" enctype="multipart/form-data">
       <h2>Register with Us</h2>
       <div class="form-control">
         <label for="username">Username</label>
-        <input type="text" id="username" placeholder="Enter username">
+        <input type="text" id="username" name="username" placeholder="Enter username">
         <small>Error Message</small>
       </div>
       <div class="form-control">
         <label for="email">Email</label>
-        <input type="text" id="email" placeholder="Enter email">
+        <input type="text" id="email" name="email" placeholder="Enter email">
         <small>Error Message</small>
       </div>
       <div class="form-control">
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter password">
+        <label for="phno">Phone No.</label>
+        <input type="tel" id="phno" name="phno" placeholder="Enter Phone No">
         <small>Error Message</small>
       </div>
       <div class="form-control">
-        <label for="confirm-password">Confirm Password</label>
-        <input type="password" id="confirm-password" placeholder="Enter password again">
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" placeholder="Enter Location">
+        <small>Error Message</small>
+      </div>
+      <div class="form-control">
+        <label for="image">Profile</label>
+        <input type="file" id="image" name="image">
         <small>Error Message</small>
       </div>
       <button type="submit">Submit</button>
