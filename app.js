@@ -5,6 +5,9 @@ const app = express();
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Serve static files from the 'images' directory (for images)
+app.use('/images', express.static(path.join(__dirname, 'images')));
+
 // Parse URL-encoded bodies for form submission handling
 app.use(express.urlencoded({ extended: true }));
 
